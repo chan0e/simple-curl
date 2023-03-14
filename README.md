@@ -498,6 +498,15 @@ public class Scurl {
 }
 
 ```
+#### 구현한것 
+ + curl http://httpbin.org/get
+ + curl -X GET http://httpbin.org/get
+    - HEAD,POST, DELETE, PUT의 기능은 구현하지못함(구현하면 수정)
+ + curl -v http://httpbin.org/get
+ + curl -v -H "X-Custom-Header: NA" http://httpbin.org/get
+ + curl -v -X POST -d "{ \"hello\": \"world\" }" -H "Content-Type: application/json"  http://httpbin.org/post
+ 
+
 
 #### 문제점 
 ```
