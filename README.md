@@ -515,6 +515,9 @@ scurl -v -X POST -d "{ \"hello\": \"world\" }" -H "Content-Type: application/jso
 
 명령어 후 돌아오는 header, body, tail에서 data, json 부분의 값이 null (어떻게 넣어야되나 고민중에 있음)
 
+--hear를 보낸후 out.println()으로 끝을 알린후 그 다음부터 데이터를 보내면 되는걸로 알고있는데 서버측에서 400 error를보냄 아마 문법적인 문제인듯함 (23.3.14)
+
+
 ```
 {
   "args": {}, 
