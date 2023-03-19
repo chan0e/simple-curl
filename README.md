@@ -554,6 +554,34 @@ scurl -v -X POST -d "{ \"hello\": \"world\" }" -H "Content-Type: application/jso
 
 ```
 
+```
+데이터가 잘 들어간 모습이다. 
+
+{
+  "args": {}, 
+  "data": "{\"test\":\"test\"}", 
+  "files": {}, 
+  "form": {}, 
+  "headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", 
+    "Accept-Encoding": "gzip, deflate", 
+    "Accept-Language": "ko-KR,ko;q=0.9", 
+    "Content-Length": "15", 
+    "Content-Type": "Application/json", 
+    "Host": "httpbin.org", 
+    "Upgrade-Insecure-Requests": "1", 
+    "User-Agent": "simple-curl/7.86.0", 
+    "X-Amzn-Trace-Id": "-"
+  }, 
+  "json": {
+    "test": "test"
+  }, 
+  "origin": "-", 
+  "url": "http://httpbin.org/post"
+}
+
+```
+
 #### Testcurl.java
 ```java
 
