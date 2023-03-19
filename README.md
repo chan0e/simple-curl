@@ -539,6 +539,21 @@ scurl -v -X POST -d "{ \"hello\": \"world\" }" -H "Content-Type: application/jso
   }
 ```
 
+```java
+23.3.19일
+
+   JSONObject obj = new JSONObject();
+            obj.put("test","test");
+            
+   //JSONObject로 보낼 데이터들을 넣어주고 
+   //header부분에 content-Length를 obj에 넣은 데이터 길이값으로 지정해주면 된다
+   
+  
+   out.println("Content-Length: " + obj.toString().length());
+
+
+```
+
 #### Testcurl.java
 ```java
 
